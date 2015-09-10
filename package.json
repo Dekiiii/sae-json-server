@@ -1,0 +1,29 @@
+{
+  "name": "sae-json-server",
+  "version": "0.0.1",
+  "description": "Simple dummy JSON server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/saezh/sae-json-server.git"
+  },
+  "keywords": [
+    "SAE",
+    "JSON",
+    "ajax",
+    "JavaScript"
+  ],
+  "author": "Gion Kunz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/saezh/sae-json-server/issues"
+  },
+  "homepage": "https://github.com/saezh/sae-json-server",
+  "dependencies": {
+    "express": "^4.13.3",
+    "json-query": "^1.5.0"
+  }
+}
