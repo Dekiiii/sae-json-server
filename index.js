@@ -6,7 +6,7 @@ var app = express();
 
 var countries = require('./data/countries.json');
 
-app.get('/', function(req, res) {
+app.get('/countries', function(req, res) {
   res.type('application/json');
 
   var query = req.query.q;
