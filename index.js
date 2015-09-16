@@ -11,9 +11,15 @@ app.get('/countries', function(req, res) {
 
   var query = req.query.q;
 
-  var filteredCountries = query ? countries.filter(function(country) {
-    return country.name.common.toLowerCase().indexOf(query.toLowerCase()) !== -1;
-  }) : countries;
+  var filteredCountries;
+
+  if (query) {
+    filteredCountries = countries.filter(function(country) {
+      return country.name.common.toLowerCase().indexOf(query.toLowerCase()) !== -1;
+    });
+  } else {
+    filteredCountries = countries;
+  }
 
   if (!filteredCountries) {
     res.statusCode = 404;
